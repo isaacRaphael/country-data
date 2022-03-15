@@ -107,7 +107,7 @@ function seedCountry(data) {
         image.classList.add('noshow');
         parent.innerHTML = `
         <div class="col">
-        <div class="card" onclick="myFunction()">
+        <div class="card" onclick="myFunction(this)">
         
             <img style="height:200px" src=${item.flags.png} class="card-img-top" alt="...">
             <div class="card-body">
@@ -130,7 +130,7 @@ function seedContinent(data) {
         
         parent.innerHTML += `
         <div class="col">
-        <div class="card" onclick="myFunction()">
+        <div class="card" onclick="myFunction(this)">
         
             <img style="height:200px" src=${item.flags.png} class="card-img-top" alt="...">
             <div class="card-body">
